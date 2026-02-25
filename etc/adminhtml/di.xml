@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Controller\Adminhtml\Order\AddComment">
+        <plugin name="hmh_order_comment_add_internal_message" type="Hmh\OrderCommentMessage\Plugin\Sales\Controller\Adminhtml\AddCommentPlugin" sortOrder="10"/>
+    </type>
+    <type name="Magento\Sales\Controller\Adminhtml\Order\Invoice\AddComment">
+        <plugin name="hmh_invoice_comment_add_internal_message" type="Hmh\OrderCommentMessage\Plugin\Sales\Controller\Adminhtml\AddCommentPlugin" sortOrder="10"/>
+    </type>
+    <type name="Magento\Sales\Controller\Adminhtml\Order\Creditmemo\AddComment">
+        <plugin name="hmh_creditmemo_comment_add_internal_message" type="Hmh\OrderCommentMessage\Plugin\Sales\Controller\Adminhtml\AddCommentPlugin" sortOrder="10"/>
+    </type>
+    <type name="Magento\Shipping\Controller\Adminhtml\Order\Shipment\AddComment">
+        <plugin name="hmh_shipment_comment_add_internal_message" type="Hmh\OrderCommentMessage\Plugin\Sales\Controller\Adminhtml\AddCommentPlugin" sortOrder="10"/>
+    </type>
+</config>

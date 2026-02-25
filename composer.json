@@ -1,0 +1,22 @@
+{
+  "name": "hmh/magento2-order-comment-message",
+  "description": "HMH Order Comment Message module",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "proprietary"
+  ],
+  "require": {
+    "php": ">=8.1",
+    "magento/framework": "*",
+    "hmh/magento2-internal-message": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Hmh\\OrderCommentMessage\\": ""
+    }
+  }
+}
